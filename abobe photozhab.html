@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>ABOBE PHOTOZHAB</title>
+	<style type="text/css">
+		#canv {
+			width: 1000px;
+			height: 800px;
+			border: 1px solid black
+		}
+	</style>
+</head>
+<body>
+<div class="head"></div>
+	<div class="canv">
+		<canvas id="canv" width="1000" height="800"></canvas>
+	</div>
+	<div class="tools">
+		<div class="coordinates">
+			<p id="x"><b>x: </b> <span id="xCoord"></span></p>
+			<p id="y"><b>y: </b> <span id="yCoord"></span></p>
+			<br>
+			<button class="toolButton" id='brush'>Brush</button>
+			<button class="toolButton" id='eraser'>Eraser</button>
+			<button class="toolButton" id='sprey'>Sprey</button>
+			<select id='sizeSelect'>
+				<option>5</option>
+				<option>10</option>
+				<option>15</option>
+				<option>20</option>
+			</select>
+			<select id="color">
+				<option style="color: red">red</option>
+				<option style="color: black">black</option>
+				<option style="color: yellow">yellow</option>
+				<option style="color: blue">blue</option>
+				<option style="color: gray">gray</option>
+				<option style="color: pink">pink</option>
+				<option style="color: brown">brown</option>
+			</select>
+		</div>
+	</div>
+
+
+	<script src="js/photozhab.js"></script>
+</body>
+</html>
