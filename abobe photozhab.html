@@ -2,45 +2,45 @@
 <html>
 <head>
 	<title>ABOBE PHOTOZHAB</title>
-	<style type="text/css">
-		#canv {
-			width: 1000px;
-			height: 800px;
-			border: 1px solid black
-		}
-	</style>
+	<link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/base-min.css">
+	<link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/pure-min.css" integrity="sha384-nn4HPE8lTHyVtfCBi5yW9d20FjT8BJwUXyWZT9InLYax14RDjBj46LmSztkmNP9w" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="css/photozhab.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
 </head>
 <body>
-<div class="head"></div>
-	<div class="canv">
+<div class="head pure-g">
+	<div class="canv pure-u-1">
 		<canvas id="canv" width="1000" height="800"></canvas>
 	</div>
-	<div class="tools">
-		<div class="coordinates">
-			<p id="x"><b>x: </b> <span id="xCoord"></span></p>
-			<p id="y"><b>y: </b> <span id="yCoord"></span></p>
-			<br>
-			<button class="toolButton" id='brush'>Brush</button>
-			<button class="toolButton" id='eraser'>Eraser</button>
-			<button class="toolButton" id='sprey'>Sprey</button>
-			<select id='sizeSelect'>
-				<option>5</option>
-				<option>10</option>
-				<option>15</option>
-				<option>20</option>
-			</select>
-			<select id="color">
-				<option style="color: red">red</option>
-				<option style="color: black">black</option>
-				<option style="color: yellow">yellow</option>
-				<option style="color: blue">blue</option>
-				<option style="color: gray">gray</option>
-				<option style="color: pink">pink</option>
-				<option style="color: brown">brown</option>
-			</select>
+	<div class="tools pure-u-1">
+		<div class="block pure-u-1">
+			<div class="coordinates">
+				<p id="x"><b>x: </b> <span id="xCoord"></span></p>
+				<p id="y"><b>y: </b> <span id="yCoord"></span></p>
+			</div>
+			<div class="buttons pure-button-group" role="group">
+				<button class="toolButton pure-button button-xlarge" id='brush'><i class="fa fa-paint-brush toolButton" id='brush' aria-hidden="true"></i></button>
+				<button class="toolButton pure-button button-xlarge" id='eraser'><i class="fa fa-eraser toolButton" id='eraser' aria-hidden="true"></i></button>
+				<button class="toolButton pure-button button-xlarge" id='spray'><i class="fas fa-spray-can toolButton" id='spray' aria-hidden="true"></i></button>
+				<select id='sizeSelect' >
+					<option>5</option>
+					<option>10</option>
+					<option>15</option>
+					<option selected>20</option>
+				</select>
+				<select id="color">
+					<option id="red" value="red">red</option>
+					<option id="black" value="black">black</option>
+					<option id="yellow" value="yellow">yellow</option>
+					<option id="blue" selected value="blue">blue</option>
+					<option id="gray" value="gray">gray</option>
+					<option id="pink" value="pink">pink</option>
+					<option id="brown" value="brown">brown</option>
+				</select>
+			</div>
 		</div>
 	</div>
-
+</div>
 	<script src="js/photozhab.js"></script>
 </body>
 </html>

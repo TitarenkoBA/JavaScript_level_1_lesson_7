@@ -51,8 +51,8 @@ var switchTool = function (button) {
 		return 'brush'
 	} else if (button.id == 'eraser') {
 		return 'eraser'
-	} else if (button.id == 'sprey') {
-		return 'sprey'
+	} else if (button.id == 'spray') {
+		return 'spray'
 	}
 };
 
@@ -76,7 +76,7 @@ var startDraw = function (evt) {
 	if (system.currentTool == 'eraser') {
 		clear (evt);
 	}
-	if (system.currentTool == 'sprey') {
+	if (system.currentTool == 'spray') {
 		drawSprey (evt);
 	}
 };

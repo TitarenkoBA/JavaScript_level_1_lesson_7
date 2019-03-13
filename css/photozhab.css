@@ -1,0 +1,66 @@
+body {
+	margin: 1% 0 0;
+	text-align: center;
+	background: gray;
+}
+
+#canv {
+	width: 1000px;
+	height: 800px;
+	border: 10px solid lightgray;
+	background: white;
+	box-shadow: 0 0 10px;
+}
+
+.block	{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.coordinates {
+	margin-right: 30px;
+}
+
+.buttons {
+	margin-left: 30px;
+}
+
+.pure-button {
+	padding: 10px 30px;
+}
+
+#red {
+	background: red;
+	color: red;
+}
+#black {
+	background: black;
+	color: black;
+}
+#yellow {
+	background: yellow;
+	color: yellow;
+}
+#blue {
+	background: blue;
+	color: blue;
+}
+#gray {
+	background: gray;
+	color: gray;
+}
+#pink {
+	background: pink;
+	color: pink;
+}
+#brown {
+	background: brown;
+	color: brown;
+}
+
+#sizeSelect, #color {
+	padding: 9.5px;
+	border: none;
+	border-right: 1px solid lightgray;
+}
